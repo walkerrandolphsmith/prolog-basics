@@ -1,0 +1,61 @@
+program -> clause list
+clause list -> clause
+clause -> predicate :- predicate list
+predicate :- predicate list -> atom(term list) :- predicate list
+atom(term list) :- predicate list -> small atom(term list) :- predicate list
+small atom(term list) :- predicate list -> small atom character(term lit) :- predicate list
+small atom character(term list) :- predicate list -> small atom character character(term list) :- predicate list
+small atom character character(term list) :- predicate list -> small atom character character character(term list) :- predicate list
+small atom character character character(term list) :- predicate list -> small atom character  character character character(term list) :- predicate list
+small atom character  character character character(term list) :- predicate list -> lowercase letter character character character character(term list) :-predicate list
+lowercase letter character character character character(term list) :-predicate list -> c character character character character(term list) :- predicate list
+c character character character character(term list) :- predicate list -> c lowercase letter character character character(term list) :- predicate list
+c lowercase letter  character character character(term list) :- predicate list -> co character character character(term list) :- predicate list
+co character character character(term list) :- predicate list -> co lowercase letter character character(term list) :- predicate list
+co lowercase letter character character(term list) :- predicate list -> col character character(term list) :- predicate list
+col character character(term list) :- predicate list -> col lowercase letter character(term list) :- predicate list
+col lowercase letter character(term list) :- predicate list -> colo character(term list) :- predicate list
+colo character(term list) :- prediacate list -> colo lowercase letter(term list) :- predicate list
+colo lowercase letter(term list) :- predicate list -> color(term list) :- predicate list
+color(term list) :- predicate list -> color(termlist, term) :- predicate list
+color (termlist, term) :- predicate list -> color(term, term) :- predicate list
+color(term, term) :- predicate list -> color(variable, term) :- predicate list
+color(variable, term) :- predicate list -> color(variable character, term) :- predicate list
+color(variable character, term) :- predicate list -> color(uppercase letter character, term) :- predicate list
+color(uppercase letter  character, term) :- predicate list -> color(R character, term) :- predicate list
+color(R character, term) :- predicate list -> color(R digit, term) :- predicate list
+color(R digit, term) :- predicate list -> color(R1, term) :- predicate list
+color(R1, term) :- predicate list -> color(R1, variable) :- predicate list
+color(R1, variable) :- predicate list -> color(R1, variable character) :- predicate list
+color(R1, variable character) :- predicate list -> color(R1, uppercase letter character) :- predicate list
+color(R1, uppercase letter character) :- predicate list -> color(R1, R character) :- predicate list
+color(R1, R character) :- predicate list -> color(R1, R digit) :- predicate list
+color(R1, R digit) :- predicate list -> color(R1, R2) :- predicate list
+color(R1, R2) :- predicate list -> color(R1, R2) :- predicate
+color(R1, R2) :- predicate -> color(R1, R2) :- atom(term list)
+color(R1, R2) :- atom(term list) -> color(R1, R2) :- samll atom(term list)
+color(R1, R2) :- small atom(term list) -> color(R1, R2) :- small atom characacter(term list)
+color(R1, R2) :- small atom character(term list) -> color(R1, R2) :- small atom character character(term list)
+color(R1, R2) :- small atom character character(term list) -> color(R1, R2) :- small atom character character character(term list)
+color(R1, R2) :- small atom character character character(term list) -> color(R1, R2) :- lowercase letter character character character(term list)
+color(R1, R2) :- lowercase letter character character character(term list) -> color(R1, R2) :- d character character character(term list)
+color(R1, R2) :- d character character character(term list) -> color(R1, R2) :- d lowercase letter character character(term list)
+ color(R1, R2) :- d lowercase letter character character(term list) -> color(R1, R2) :- di character character(term list)
+ color(R1, R2) :- di character character(term list) -> color (R1, R2) :- di lowercase letter character(term list)
+ color(R1, R2) :- di lowercase letter character(term list) -> color(R1, R2) :- dif character(term list)
+ color(R1, R2) :- dif character(term list) -> color)R1, R2) :- dif lowercase letter(term list)
+ color(R1, R2) :- dif lowercase letter(term list) -> color(R1, R2) :- diff(term list)
+ color(R1, R2) :- diff(term list) -> color(R1, R2) :- diff(termlist, term)
+ color(R1, R2) :- diff(term list, term) -> color(R1, R2) :- diff(term, term)
+ color(R1, R2) :- diff(term, term) -> color(R1, R2) :- diff(variable, term)
+ color(R1, R2) :- diff(variable, term) -> color(R1, R2) :- diff(variable character, term)
+ color(R1, R2) :- diff(variable character, term) -> color(R1, R2) :- diff(uppercase letter character, term)
+ color(R1, R2) :- diff(uppercase letter character, term) -> color(R1, R2) :- diff(R character, term)
+ color(R1, R2) :- diff(R character, term) -> color(R1, R2) :- diff(R digit, term)
+ color(R1, R2) :- diff(R digit, term) -> color(R1, R2) :- diff(R1, term)
+ color(R1, R2) :- diff(R1, term) -> color(R1, R2) :- diff(R1, variable)
+ color(R1, R2) :- diff(R1, variable) -> color(R1, R2) :- diff(R1, variable character)
+ color(R1, R2) :- diff(R1, variable character) -> color(R1, R2) :- diff(R1, uppercase letter character)
+ color(R1, R2) :- diff(R1, uppercase letter character) ->  color(R1, R2) :- diff(R1, R character)
+ color(R1, R2) :- diff(R1, R character) -> color(R1, R2) :- diff(R1,R digit)
+ color(R1, R2) :- diff(R1,R digit) -> color(R1, R2) :- diff(R1,R2)
